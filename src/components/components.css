@@ -1,0 +1,210 @@
+:root {
+  --BackgroundColor: #b0aeae;
+  --MainContentBackground: #e3e1e1;
+  --TextColor: #3e3e3e;
+  --PostBG: #b6b6b6;
+  --HeadingColor: #282828;
+  --ButtonColor: #343434;
+  --ButtonHover: #4c4c4c;
+  --LinksColor: #318eff;
+}
+
+[theme="dark"] {
+  --BackgroundColor: #4d4d4d;
+  --MainContentBackground: #6d6d6d;
+  --TextColor: #f5f5f5;
+  --PostBG: #545454;
+  --HeadingColor: #d9d8d8;
+  --ButtonColor: #999797;
+  --ButtonHover: #dbdada;
+  --LinksColor: #318eff;
+}
+body {
+  overflow-x: hidden;
+}
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--BackgroundColor);
+  color: var(--TextColor);
+}
+.headerTitle {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+.theme {
+  position: absolute;
+  float: right;
+  right: 3rem;
+  border: 3px solid var(--TextColor);
+  padding: 0.2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  top: 0.8rem;
+  transition: all 1s ease-in;
+}
+.post-main {
+  padding: 5rem 1rem;
+  width: 60%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+
+  color: var(--TextColor);
+  margin: 0 auto;
+}
+.Spinner,
+.nopost {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--MainContentBackground);
+}
+.post {
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: var(--PostBG);
+  gap: 40px;
+}
+.postTitle {
+  color: var(--HeadingColor);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+.postDesc {
+  margin-top: 0.5rem;
+}
+.postAuthor {
+  color: var(--HeadingColor);
+  font-style: italic;
+  font-weight: 500;
+}
+.postDate {
+  color: var(--HeadingColor);
+  font-weight: 500;
+}
+.postContent {
+  margin: 1rem 0rem;
+}
+.postCategory {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--HeadingColor);
+  font-size: 1.2rem;
+}
+
+.tags {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.postTags {
+  text-decoration: underline;
+  color: var(--LinksColor);
+  cursor: pointer;
+}
+.footer {
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  color: var(--TextColor);
+  background-color: var(--BackgroundColor);
+  color: var(--TextColor);
+  position: fixed;
+  bottom: 0px;
+}
+.innerFooter {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+}
+.left {
+  display: flex;
+  gap: 1rem;
+}
+.Button {
+  border: 2px solid var(--ButtonColor);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  columns: var(--ButtonColor);
+  cursor: pointer;
+}
+.Button:hover {
+  border: none;
+  color: var(--BackgroundColor);
+  background-color: var(--ButtonHover);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.right {
+  font-size: 1rem;
+}
+.page {
+  border: 2px solid var(--TextColor);
+
+  border-radius: 5px;
+  min-width: 20px;
+  padding: 5px;
+}
+.currentPage {
+  font-weight: 600;
+}
+.backButton {
+  margin-top: 100px;
+  margin-left: 40px;
+  border: 2px solid var(--ButtonColor);
+  padding: 0.5rem;
+
+  border-radius: 10px;
+  width: 5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  columns: var(--ButtonColor);
+  cursor: pointer;
+}
+.backButton:hover {
+  border: none;
+  color: var(--BackgroundColor);
+  background-color: var(--ButtonHover);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.blogpage {
+  width: 60%;
+  margin: 0 auto;
+}
+.relatedBlog {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--TextColor);
+  margin: 10px 10px;
+}
+.blogPageSpinner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30%;
+  justify-content: center;
+}
